@@ -1,2 +1,47 @@
   [1m[35m (4074.6ms)[0m  [1m[35mCREATE DATABASE "FirstRoutesAndController_development" ENCODING = 'unicode'[0m
   [1m[35m (672.5ms)[0m  [1m[35mCREATE DATABASE "FirstRoutesAndController_test" ENCODING = 'unicode'[0m
+  [1m[35m (3.3ms)[0m  [1m[35mCREATE DATABASE "FirstRoutesAndController_development" ENCODING = 'unicode'[0m
+  [1m[35m (1.4ms)[0m  [1m[35mCREATE DATABASE "FirstRoutesAndController_test" ENCODING = 'unicode'[0m
+Started GET "/users" for ::1 at 2022-12-14 15:23:00 -0500
+
+ActionController::RoutingError - uninitialized constant UsersController
+      Object.const_get(camel_cased_word)
+            ^^^^^^^^^^
+            raise MissingController.new(error.message, error.name)
+            ^^^^^:
+
+  [1m[35m (1.1ms)[0m  [1m[35mCREATE DATABASE "FirstRoutesAndController_development" ENCODING = 'unicode'[0m
+  [1m[35m (0.9ms)[0m  [1m[35mCREATE DATABASE "FirstRoutesAndController_test" ENCODING = 'unicode'[0m
+Started GET "/users" for ::1 at 2022-12-14 15:31:42 -0500
+
+AbstractController::ActionNotFound - The action 'index' could not be found for UsersController:
+
+Started GET "/hkjgjgjhgkjhkg" for ::1 at 2022-12-14 15:32:52 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/hkjgjgjhgkjhkg"):
+  
+Started GET "/users" for ::1 at 2022-12-14 15:33:11 -0500
+
+AbstractController::ActionNotFound - The action 'index' could not be found for UsersController:
+
+Started GET "/users" for ::1 at 2022-12-14 15:34:42 -0500
+Processing by UsersController#index as */*
+No template found for UsersController#index, rendering head :no_content
+Completed 204 No Content in 1ms (ActiveRecord: 0.0ms | Allocations: 266)
+
+
+Started GET "/users" for ::1 at 2022-12-14 15:36:00 -0500
+Processing by UsersController#index as */*
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 10)
+Completed 200 OK in 4ms (Views: 3.7ms | ActiveRecord: 0.0ms | Allocations: 665)
+
+
+Started GET "/new_user" for ::1 at 2022-12-14 15:40:11 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/new_user"):
+  
+Started GET "/users/new" for ::1 at 2022-12-14 15:40:35 -0500
+
+AbstractController::ActionNotFound - The action 'new' could not be found for UsersController:
+
